@@ -10,7 +10,7 @@ pwd="$(pwd)"
 . setup_helpers.sh
 
 # source .profile so we got correct env-vars for setup
-source "shell/profile"
+source "sh/profile"
 
 # create required dirs
 mkdir -p "$GOPATH"
