@@ -51,5 +51,7 @@ PACKAGES=("${PACKAGES[@]}"
     "spotify"
     # Telephant
     "telephant-git"
+    # Network
+    "networkmanager"
 
 )
