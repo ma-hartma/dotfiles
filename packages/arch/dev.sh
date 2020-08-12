@@ -32,10 +32,6 @@ PACKAGES=("${PACKAGES[@]}"
     "jdk" "jre"
     # REST tools
     "postman-bin"
-
-
-
-
 )
 
 # To be added:

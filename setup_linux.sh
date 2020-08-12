@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 #   Copyright (c) 2017-2019, Christian Muehlhaeuser <muesli@gmail.com>
+#   Copyright (c) 2020-2020, Matthias Hartmann <mahartma@mahartma.com>
 #
 #     For license see LICENSE
 #
