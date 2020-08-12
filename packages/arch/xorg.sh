@@ -5,7 +5,4 @@ PACKAGES=("${PACKAGES[@]}"
     "xorg-server"
     # X11 utils
     "xclip"
-    # Fonts
-    "xorg-font-utils"
-    "xorg-fonts-alias"
 )
