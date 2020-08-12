@@ -3,4 +3,4 @@
 PACKAGES=("${PACKAGES[@]}"
     "rvgl-bin"
     "rvgl-soundtrack-orig"
-}
+)

@@ -13,10 +13,8 @@ PACKAGES=("${PACKAGES[@]}"
     "htop" "iotop" "lsof" "ncdu"
     # Editors
     "joe" "micro-bin"
-    # Security
-    "yubico-pam" "pam_beacon-git"
     # CLI tools
-    "ripgrep" "time" "tmux" "which" "imagemagick" "cht.sh"
+    "ripgrep" "time" "tmux" "which" "imagemagick"
     # Decompression
     "unrar" "unzip"
     # Shell

@@ -9,7 +9,7 @@ PACKAGES=("${PACKAGES[@]}"
     # SCMs
     "git"
     # Go
-    "go" "go-tools" "delve" "goreleaser"
+    "go" "go-tools" "delve"
     # Web-dev on CLI
     "httpie" "js-beautify"
     # Image handling
