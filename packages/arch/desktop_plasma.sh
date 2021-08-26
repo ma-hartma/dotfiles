@@ -7,8 +7,6 @@ PACKAGES=("${PACKAGES[@]}"
     "ark"
     # File manager
     "dolphin"
-    # Alternative Qt-based browser
-    "falkon"
     # Calculator
     "kcalc"
     # Android integration
@@ -32,7 +30,7 @@ PACKAGES=("${PACKAGES[@]}"
     # Docker widget
     "plasma5-applets-docker"
     # Desktop utils
-    "latte-dock"
+    # "latte-dock"
     # GTK integration
     "kde-gtk-config"
 )

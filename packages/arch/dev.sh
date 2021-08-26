@@ -1,17 +1,27 @@
 #!/bin/bash
 
 PACKAGES=("${PACKAGES[@]}"
-    # IDEs / Code editors
-    "visual-studio-code-bin"
+    # IDEs / Code editors + keyring dependency
+    "visual-studio-code-bin" "gnome-keyring" "seahorse"
     "kdevelop"
     # CMake
     "cmake" "extra-cmake-modules"
     # SCMs
-    "git"
+    "git" "git-lfs"
+    # Environment
+    "direnv"
     # Go
-    "go" "go-tools" "delve"
+    "go" "go-tools" "delve" "goreleaser"
+    # .NET Core
+    "dotnet-runtime"
+    # Web Development
+    "hugo"
+    # JavaScript
+    "nodejs" "npm" "yarn"
+    # Postgres
+    "postgresql" "pgadmin4"
     # Web-dev on CLI
-    "httpie" "js-beautify"
+    "httpie"
     # Image handling
     "pngcrush" "cutycapt-qt5-git"
     # Qt5 packages
