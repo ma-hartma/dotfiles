@@ -34,7 +34,23 @@ Enable microcode updates: https://wiki.archlinux.org/index.php/microcode
 
 Install systemd-boot pacman hook: https://wiki.archlinux.org/index.php/systemd-boot#Automatically
 
-Enable SDDM: `systemctl enable sddm`
+Enable SDDM: 
+```
+systemctl enable sddm
+systemctl start sddm
+```
+
+Enable Bluetooth: 
+```
+systemctl enable bluetooth
+systemctl start bluetooth
+```
+
+Enable Network Manager:
+```
+systemctl enable NetworkManager
+systemctl start NetworkManager
+```
 
 ### Configuration
 
@@ -87,6 +103,13 @@ Configure Avahi/mDNS: https://wiki.archlinux.org/index.php/avahi
 Install TLP: https://wiki.archlinux.org/index.php/TLP
 
 Enable zram: https://wiki.archlinux.org/index.php/Improving_performance#Zram_or_zswap
+
+Enable no-hang for low memory handling:
+```
+systemctl enable nohang-desktop.service
+systemctl start nohang-desktop.service
+```
+
 
 ## Configuration for Unix Platforms
 

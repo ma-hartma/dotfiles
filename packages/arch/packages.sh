@@ -34,7 +34,8 @@ source "$DIR/desktop.sh"
 source "$DIR/desktop_plasma.sh"
 source "$DIR/makerstuff.sh"
 source "$DIR/virtualbox.sh"
-source "$DIR/games.sh"
+# source "$DIR/games.sh"
 source "$DIR/samsung-printer.sh"
+source "$DIR/latex.sh"
 
 yay -S --needed ${PACKAGES[@]}

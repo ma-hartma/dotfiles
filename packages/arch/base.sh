@@ -11,8 +11,6 @@ PACKAGES=("${PACKAGES[@]}"
     "hdparm" "smartmontools"
     # Monitors
     "htop" "iotop" "lsof" "ncdu"
-    # Editors
-    "joe" "micro-bin"
     # CLI tools
     "ripgrep" "time" "tmux" "which" "imagemagick"
     # Decompression
@@ -29,4 +27,8 @@ PACKAGES=("${PACKAGES[@]}"
     "nvidia"
     # SDDM
     "sddm"
+    # PGP
+    "gnupg"
+    # File Systems
+    "cryfs"
 )

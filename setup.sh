@@ -44,6 +44,8 @@ linkTo "sh/profile" "$HOME/.profile"
 # Setup zsh
 linkTo "sh/zshrc" "$HOME/.zshrc"
 
+# Setup vim
+linkTo "sh/vimrc" "$HOME/.vimrc"
 
 # Setup git
 mkdir -p "$HOME/.config/git"

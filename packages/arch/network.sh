@@ -5,4 +5,6 @@ PACKAGES=("${PACKAGES[@]}"
     "net-tools" "inetutils" "ethtool" "nmap" "nss-mdns" "openbsd-netcat" "prettyping" "traceroute" "wget" "whois" "wol" "rsync"
     # SSH
     "openssh" "sshfs"
+    # Speedtest
+    "speedtest-cli"
 )
