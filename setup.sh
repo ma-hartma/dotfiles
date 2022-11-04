@@ -30,12 +30,12 @@ fi
 
 ./setup_$OSID.sh
 
-cd "$HOME/Sources"
 # Install oh-my-zsh
-#if [ ! -d "oh-my-zsh" ]
-#then
-#    git clone https://github.com/ohmyzsh/ohmyzsh
-#fi
+cd "$HOME"
+if [ ! -d ".oh-my-zsh" ]
+then
+    git clone https://github.com/ohmyzsh/ohmyzsh "$HOME/.oh-my-zsh"
+fi
 cd "$pwd"
 
 # Setup profile
@@ -53,6 +53,7 @@ linkTo "configs/git/config" "$HOME/.config/git/config"
 linkTo "configs/git/ignore" "$HOME/.config/git/ignore"
 
 # Setup pacman hook
+mkdir -p "/etc/pacman.d/hooks"
 linkTo "configs/hooks/mirrorupgrade.hook" "/etc/pacman.d/hooks/mirrorupgrade.hook"
 
 

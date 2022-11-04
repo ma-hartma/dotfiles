@@ -1,5 +1,8 @@
+# go
 export GOPATH=$HOME/go
 GO111MODULES=on
+export PATH=$PATH:$(go env GOPATH)/bin
+
 
 PATH="$HOME/.node_modules/bin:$PATH"
 export npm_config_prefix=~/.node_modules
