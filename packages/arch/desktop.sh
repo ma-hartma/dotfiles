@@ -9,6 +9,8 @@ PACKAGES=("${PACKAGES[@]}"
     "timekeeper-git" "rsibreak"
     # Browsers
     "chromium" "chromium-widevine" "firefox"
+    # Cloud
+    "nextcloud-client"
     # OpenVPN
     "networkmanager-openvpn"
     # Video players
@@ -31,14 +33,20 @@ PACKAGES=("${PACKAGES[@]}"
     "telegram-desktop" "signal-desktop"
     # Access Desktop trash from CLI
     "trash-cli"
-    # SmartCards
-    #"yubikey-personalization-gui" "libu2f-host"
+    # SmartCards and yubikey
+    "pcsclite ccid hopenpgp-tools yubikey-personalization yubikey-personalization-gui"
     # Photography
     "digikam"
     # Video editor
     "kdenlive"
     # Document viewers / editors
     "gwenview" "krita" "okular" "xournalpp"
+    # Wacom tablet
+    "xf86-input-wacom" "xorg-xrandr"
+    # Document editors / paint
+    "mypaint" "xournalpp"
+    # Diagrams
+    "dia"
     # Documents
     "pandoc"
     # Editors
@@ -55,8 +63,6 @@ PACKAGES=("${PACKAGES[@]}"
     "mattermost-desktop"
     # Spotify
     "spotify"
-    # Telephant
-    "telephant-git"
     # Dino
     "dino"
     # Network

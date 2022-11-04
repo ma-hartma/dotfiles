@@ -11,7 +11,9 @@ PACKAGES=("${PACKAGES[@]}"
     # Environment
     "direnv"
     # Go
-    "go" "go-tools" "delve" "goreleaser"
+    "go" "go-tools" "delve" "goreleaser-bin"
+    # Flutter
+    "flutter" "android-sdk" "android-studio" "android-emulator"
     # .NET Core
     "dotnet-runtime"
     # Web Development
@@ -23,7 +25,7 @@ PACKAGES=("${PACKAGES[@]}"
     # Web-dev on CLI
     "httpie"
     # Image handling
-    "pngcrush" "cutycapt-qt5-git"
+    "pngcrush"
     # Qt5 packages
     "qt5-base" "qt5-systems" "qt5-feedback" "qt5-xmlpatterns" "qt5-x11extras"
     "qt5-webview" "qt5-webchannel" "qt5-websockets" "qt5-webkit" "qt5-webengine"
@@ -42,6 +44,8 @@ PACKAGES=("${PACKAGES[@]}"
     "jdk" "jre"
     # REST tools
     "postman-bin"
+    # C
+    "gdb" "valgrind" "cppcheck" "flawfinder" "bochs" "qemu-full" "gcc"
 )
 
 # To be added:

@@ -12,7 +12,7 @@ PACKAGES=("${PACKAGES[@]}"
     # Monitors
     "htop" "iotop" "lsof" "ncdu"
     # CLI tools
-    "ripgrep" "time" "tmux" "which" "imagemagick"
+    "ripgrep" "time" "tmux" "which" "imagemagick" "tree"
     # Decompression
     "unrar" "unzip"
     # Shell
@@ -31,4 +31,6 @@ PACKAGES=("${PACKAGES[@]}"
     "gnupg"
     # File Systems
     "cryfs"
+    # docs
+    "man-db" "man-pages"
 )

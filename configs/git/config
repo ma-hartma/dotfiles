@@ -1,7 +1,7 @@
 [user]
 	email = mahartma@mahartma.com
 	name = Matthias Hartmann
-	signingkey = E46ECBE203F4BA3E
+	signingkey = 0xCAFF6D0A8FFA707D
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -11,3 +11,7 @@
 	default = simple
 [color]
 	ui = true
+[safe]
+	directory = /opt/flutter
+[pull]
+	rebase = true
