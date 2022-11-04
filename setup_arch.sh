@@ -7,8 +7,6 @@
 #
 set -e
 
-if [[ "$FLAVOR" == "router" ]]; then
-    FLAVOR="_${FLAVOR}"
 elif [[ "$FLAVOR" == "minimal" ]]; then
     FLAVOR="_${FLAVOR}"
 elif [[ "$FLAVOR" != "" ]]; then
@@ -20,8 +18,18 @@ fi
 # Install packages
 ./packages/arch${FLAVOR}/packages.sh
 
+# Setup pacman hook
+mkdir -p "/etc/pacman.d/hooks"
+linkTo "configs/hooks/mirrorupgrade.hook" "/etc/pacman.d/hooks/mirrorupgrade.hook"
+
 # Install drivers
-#./packages/arch${FLAVOR}/drivers/bluetooth.sh
-#./packages/arch${FLAVOR}/drivers/smartcard.sh
-#./packages/arch${FLAVOR}/drivers/intel.sh
-#./packages/arch${FLAVOR}/drivers/razer.sh
+./packages/arch${FLAVOR}/drivers/bluetooth.sh
+./packages/arch${FLAVOR}/drivers/smartcard.sh
+./packages/arch${FLAVOR}/drivers/intel.sh
+
+if lspci -k | grep -qA 2 -E "(NVIDIA)"; then
+    echo "Found NVIDIA GPU, installing drivers..."
+    ./packages/arch${FLAVOR}/drivers/nvidia.sh
+else
+    echo "No NVIDIA GPU found, skipping nvidia driver installation"
+fi

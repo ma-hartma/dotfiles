@@ -34,7 +34,7 @@ fi
 cd "$HOME"
 if [ ! -d ".oh-my-zsh" ]
 then
-    git clone https://github.com/ohmyzsh/ohmyzsh "$HOME/.oh-my-zsh"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 cd "$pwd"
 
@@ -51,10 +51,5 @@ linkTo "sh/vimrc" "$HOME/.vimrc"
 mkdir -p "$HOME/.config/git"
 linkTo "configs/git/config" "$HOME/.config/git/config"
 linkTo "configs/git/ignore" "$HOME/.config/git/ignore"
-
-# Setup pacman hook
-mkdir -p "/etc/pacman.d/hooks"
-linkTo "configs/hooks/mirrorupgrade.hook" "/etc/pacman.d/hooks/mirrorupgrade.hook"
-
 
 cd "$pwd"

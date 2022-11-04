@@ -23,8 +23,6 @@ PACKAGES=("${PACKAGES[@]}"
     "glow"
     # Systemd pacman hook
     "systemd-boot-pacman-hook"
-    # Nvidia Drivers
-    "nvidia"
     # SDDM
     "sddm"
     # PGP

@@ -33,8 +33,6 @@ PACKAGES=("${PACKAGES[@]}"
     "telegram-desktop" "signal-desktop"
     # Access Desktop trash from CLI
     "trash-cli"
-    # SmartCards and yubikey
-    "pcsclite ccid hopenpgp-tools yubikey-personalization yubikey-personalization-gui"
     # Photography
     "digikam"
     # Video editor
