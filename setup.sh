@@ -30,12 +30,6 @@ fi
 
 ./setup_$OSID.sh
 
-# Install oh-my-zsh
-cd "$HOME"
-if [ ! -d ".oh-my-zsh" ]
-then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
 cd "$pwd"
 
 # Setup profile
@@ -51,5 +45,12 @@ linkTo "sh/vimrc" "$HOME/.vimrc"
 mkdir -p "$HOME/.config/git"
 linkTo "configs/git/config" "$HOME/.config/git/config"
 linkTo "configs/git/ignore" "$HOME/.config/git/ignore"
+
+# Install oh-my-zsh
+cd "$HOME"
+if [ ! -d ".oh-my-zsh" ]
+then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
 
 cd "$pwd"
