@@ -1,9 +1,8 @@
 #!/bin/bash
 
-PACKAGES=("${PACKAGES[@]}")
-
-# password manager
-CASK=("${CASK[@]}" "1password" "gopass" "keepassxc")
+# password managers
+PACKAGES=("${PACKAGES[@]}" "gopass")
+CASK=("${CASK[@]}" "1password" "keepassxc")
 
 # browsers
 CASK=("${CASK[@]}" "firefox" "chromium")
@@ -15,7 +14,7 @@ CASK=("${CASK[@]}" "nextcloud")
 CASK=("${CASK[@]}" "discord" "signal" "mumble" "zoom" "microsoft-teams")
 
 # streaming
-CASK=("${CASK[@]}" "obs")
+CASK=("${CASK[@]}" "obs" "spotify")
 
 # image manipulation
 CASK=("${CASK[@]}" "gimp" "krita" "affinity-designer")
