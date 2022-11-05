@@ -7,6 +7,8 @@
 #
 set -e
 
+. setup_helpers.sh
+
 elif [[ "$FLAVOR" == "minimal" ]]; then
     FLAVOR="_${FLAVOR}"
 elif [[ "$FLAVOR" != "" ]]; then
@@ -21,6 +23,9 @@ fi
 # Setup pacman hook
 mkdir -p "/etc/pacman.d/hooks"
 linkTo "configs/hooks/mirrorupgrade.hook" "/etc/pacman.d/hooks/mirrorupgrade.hook"
+
+# link vscode config
+linkTo "configs/vscode/settings.json" "$HOME/.config/Code/User/settings.json"
 
 # Install drivers
 ./packages/arch${FLAVOR}/drivers/bluetooth.sh
