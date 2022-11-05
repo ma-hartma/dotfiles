@@ -1,3 +1,6 @@
 #!/bin/bash
 
-PACKAGES=("${PACKAGES[@]}" "git" "gnupg" "htop" "watch")
+PACKAGES=("${PACKAGES[@]}" "git" "htop" "watch" "wget")
+
+# gpg & yubikey
+PACKAGES=("${PACKAGES[@]}" "gnupg" "yubikey-personalization" "hopenpgp-tools" "ykman" "pinentry-mac")
