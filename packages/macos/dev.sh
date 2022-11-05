@@ -13,7 +13,7 @@ PACKAGES=("${PACKAGES[@]}" "openjdk")
 PACKAGES=("${PACKAGES[@]}" "direnv")
 
 # docker
-CASK=("${CASK[@]}" "docker" "docker-toolbox")
+CASK=("${CASK[@]}" "docker")
 
 # ide
 CASK=("${CASK[@]}" "visual-studio-code" "intellij-idea-ce")
