@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # go
-PACKAGES=("${PACKAGES[@]}" "go")
+PACKAGES=("${PACKAGES[@]}" "go" "golangci-lint")
 
 # js
 PACKAGES=("${PACKAGES[@]}" "node" "yarn")

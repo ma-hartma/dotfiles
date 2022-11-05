@@ -34,4 +34,4 @@ chmod +x /tmp/powerline/install.sh
 rm -drf /tmp/powerline
 
 # link vscode config
-linkTo "configs/vscode/settings.json" "$HOME/Library/Application\ Support/Code/User/settings.json"
+linkTo "configs/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
