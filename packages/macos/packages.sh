@@ -18,6 +18,11 @@ CASK=()
 source "$DIR/base.sh"
 source "$DIR/dev.sh"
 source "$DIR/desktop.sh"
+source "$DIR/makerstuff.sh"
 
 brew install ${PACKAGES[@]}
 brew install --cask ${CASK[@]}
+
+# instsall cocoapods for ios development with flutter
+sudo gem install cocoapods
+sudo gem uninstall ffi && sudo gem install ffi -- --enable-libffi-alloc

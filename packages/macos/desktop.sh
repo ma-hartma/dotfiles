@@ -1,11 +1,17 @@
 #!/bin/bash
 
+# window manager
+PACKAGES=("${PACKAGES[@]}" "rectangle")
+
+# terminal
+CASK=("${CASK[@]}" "iterm2")
+
 # password managers
 PACKAGES=("${PACKAGES[@]}" "gopass")
 CASK=("${CASK[@]}" "1password" "keepassxc")
 
 # browsers
-CASK=("${CASK[@]}" "firefox" "chromium")
+CASK=("${CASK[@]}" "firefox" "google-chrome")
 
 # cloud
 CASK=("${CASK[@]}" "nextcloud")
@@ -17,7 +23,7 @@ CASK=("${CASK[@]}" "discord" "signal" "mumble" "zoom" "microsoft-teams")
 CASK=("${CASK[@]}" "obs" "spotify")
 
 # image manipulation
-CASK=("${CASK[@]}" "gimp" "krita" "affinity-designer")
+CASK=("${CASK[@]}" "gimp" "krita" "affinity-designer" "affinity-photo" "affinity-publisher")
 
 # video editor
 CASK=("${CASK[@]}" "kdenlive")
