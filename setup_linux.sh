@@ -21,3 +21,6 @@ if [ -f /etc/os-release ]; then
 else
     echo "Error detecting distribution!"
 fi
+
+# Setup profile
+linkTo "sh/profile" "$HOME/.profile"

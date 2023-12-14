@@ -24,7 +24,7 @@ softwareupdate --install-rosetta --agree-to-license
 echo "Installing packages..."
 ./packages/macos/packages.sh
 
-# install powerline fonts
+echo "Install Powerline Fonts"
 mkdir /tmp/powerline
 git clone https://github.com/powerline/fonts.git /tmp/powerline  --depth=1
 # install
@@ -35,3 +35,5 @@ rm -drf /tmp/powerline
 
 # link vscode config
 linkTo "configs/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+
+echo "Finished Installing on MacOS"

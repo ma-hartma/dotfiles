@@ -51,7 +51,7 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": "off"
     },
     "redhat.telemetry.enabled": false,
     "go.lintTool": "golangci-lint",
@@ -68,5 +68,6 @@
         "dockercompose": false
     },
     "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.colorTheme": "Visual Studio Dark"
+    "workbench.colorTheme": "Visual Studio Dark",
+    "window.zoomLevel": 1
 }

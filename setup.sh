@@ -32,9 +32,7 @@ fi
 
 cd "$pwd"
 
-# Setup profile
-linkTo "sh/profile" "$HOME/.profile"
-
+echo "Linking configs"
 # Setup zsh
 linkTo "sh/zshrc" "$HOME/.zshrc"
 
@@ -47,6 +45,7 @@ linkTo "configs/git/config" "$HOME/.config/git/config"
 linkTo "configs/git/ignore" "$HOME/.config/git/ignore"
 
 # Install oh-my-zsh
+echo "Setting up OMZ"
 cd "$HOME"
 if [ ! -d ".oh-my-zsh" ]
 then

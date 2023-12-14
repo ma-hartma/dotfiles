@@ -19,7 +19,7 @@ CASK=("${CASK[@]}" "android-studio")
 PACKAGES=("${PACKAGES[@]}" "direnv")
 
 # docker
-CASK=("${CASK[@]}" "docker" "act")
+CASK=("${CASK[@]}" "docker")
 
 # ide
 CASK=("${CASK[@]}" "visual-studio-code" "intellij-idea-ce")

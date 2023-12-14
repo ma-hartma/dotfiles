@@ -23,6 +23,7 @@ source "$DIR/makerstuff.sh"
 brew install ${PACKAGES[@]}
 brew install --cask ${CASK[@]}
 
-# instsall cocoapods for ios development with flutter
+# install cocoapods for ios development with flutter
+echo "Installing Cocoapods"
 sudo gem install cocoapods
 sudo gem uninstall ffi && sudo gem install ffi -- --enable-libffi-alloc
