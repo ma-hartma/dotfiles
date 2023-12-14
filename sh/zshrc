@@ -9,8 +9,8 @@ gpg-connect-agent updatestartuptty /bye > /dev/null
 eval "$(direnv hook zsh)"
 
 # dotnet
-export PATH="$PATH:$HOME/.dotnet/tools/"
-export ASPNETCORE_ENVIRONMENT=Development
+# export PATH="$PATH:$HOME/.dotnet/tools/"
+# export ASPNETCORE_ENVIRONMENT=Development
 
 # go
 export GOPATH=$HOME/go
@@ -21,15 +21,12 @@ export PATH="$PATH:/opt/flutter/bin"
 export CHROME_EXECUTABLE=/bin/chromium
 
 # android studio
-export ANDROID_HOME=/home/mahartma/Android/Sdk
-export ANDROID_SWT=/usr/share/java
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin
+# export ANDROID_HOME=/home/mahartma/Android/Sdk
+# export ANDROID_SWT=/usr/share/java
+# export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin
 
 # android emulator
-export PATH="${PATH}:${ANDROID_HOME}/emulator"
-
-# mch
-export MCH_TOOLS=~/mch/mch2022-tools-master
+# export PATH="${PATH}:${ANDROID_HOME}/emulator"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
