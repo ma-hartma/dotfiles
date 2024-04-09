@@ -100,6 +100,8 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git fzf)
 
+eval "$(fzf --zsh)"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -130,3 +132,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Enable shell completion (carapace)
 autoload -U compinit; compinit
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

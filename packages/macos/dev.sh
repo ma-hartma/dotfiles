@@ -32,3 +32,6 @@ CASK=("${CASK[@]}" "dotnet-sdk")
 
 # cli
 PACKAGES=("${PACKAGES[@]}" "fx")
+
+# python
+PACKAGES=("${PACKAGES[@]}" "pyenv")

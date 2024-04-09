@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# CAD
-CASK=("${CASK[@]}" "openscad")
+# 3D Printing
+CASK=("${CASK[@]}" "openscad" "prusaslicer")
